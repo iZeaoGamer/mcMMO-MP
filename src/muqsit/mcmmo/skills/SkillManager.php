@@ -216,7 +216,7 @@ class SkillManager {
 
     public function merge(SkillManager $skill) : void{
         foreach($skill->getSkillTree() as $skillId => $instance){
-            $this->addXp($skillId, $instance->getXp());
+            $this->addSkillXp($skillId, $instance->getXp());
         }
     }
 
